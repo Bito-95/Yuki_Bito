@@ -25,3 +25,82 @@ a:hover{
     margin: 0 auto;
     max-width: 1000px;
 }
+
+/* ===== header&nav ===== */ 
+.header-container{
+    display: flex;
+}
+/* ----- header-logo ----- */
+.nri-logo{
+    margin: 0.4rem auto 0.4rem 2.4rem;
+}
+.header-logo img{
+    width: 56px;
+    height: 28px;
+}
+
+/* ----- navbar ----- */
+.navbar{
+    margin: 0.3rem 1.5rem 0.3rem 0;
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar-list{
+    display: flex;
+}
+.navbar-list li{
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 0.9rem 0.5rem;
+    text-align: right;
+}
+.navbar-list a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+/* ----- header-button ----- */
+.header-btn{
+    display: flex;
+}
+.header-btn button{
+    background-color: #fff;
+    border: none;
+}
+.header-btn img{
+    width: 40px;
+    height: 20px;
+    margin: 0.3rem 0;
+}
+.search{
+    margin: 1rem 0;
+}
+.global{
+    margin: 1rem 0;
+}
+.hamburger-btn{
+    position: relative;
+    margin: 0.8rem 0.8rem 0.8rem 0.8rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.ham-line{
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 2px;
+    background-color: #111;
+}
+.line-1{
+    top: 10px;
+}
+.line-2{
+    top: 18px;
+}
+.line-3{
+    top: 27px;
+}
