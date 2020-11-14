@@ -113,5 +113,37 @@ a:hover{
     top: 27px;
 }
 .header-fix-border{
-    padding: 60px 0 118px 0;
+    padding: 55px 0 118px 0;
+}
+/* ----- パンくずリスト ------ */
+.breadcrumb-container{
+    margin-left: 4.7rem;
+    margin-bottom:1.5rem;
+}
+.breadcrumb ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #a9a9a9;
+}
+.breadcrumb li{
+    display: inline;
+    margin-left: -0.3rem;
+    font-size: 0.7rem;
+    color: #a9a9a9;
+}
+.breadcrumb li:first-child{
+    margin-left: 0;
+}
+.breadcrumb li::after{
+    content: ">";
+    margin: 0 0.3rem;
+    color: #696969;
+    font-weight: lighter;
+}
+.breadcrumb li:last-child::after{
+    content: none;
 }
