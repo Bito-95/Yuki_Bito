@@ -23,7 +23,7 @@ a:hover{
 /* ----- main共通 ----- */
 .container{
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 820px;
 }
 
 /* ===== header&nav ===== */ 
@@ -176,4 +176,28 @@ a:hover{
 }
 .key-catch h1{
     font-size: 1.5rem;
+}
+
+/* ===== main ===== */
+/* --- share --- */
+.share{
+    display: flex;
+    margin-top: 50px;
+}
+.share-list{
+    display: flex;
+    margin-left: auto;
+    font-size: 0.8rem;
+    line-height: 2;
+}
+.share-list img{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+.share-list li{
+    list-style-type: none;
+}
+.share-list li:first-child{
+    margin-right: 10px;
 }
