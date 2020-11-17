@@ -9,6 +9,9 @@ body, div, p, h1, h2, ul{
     margin: 0;
     padding: 0;
 }
+p{
+    font-weight: lighter;
+}
 img{
     width: 100%;
     height: auto;
@@ -143,7 +146,6 @@ a:hover{
     content: ">";
     margin: 0 0.3rem;
     color: #696969;
-    font-weight: lighter;
 }
 .breadcrumb li:last-child::after{
     content: none;
@@ -172,7 +174,6 @@ a:hover{
 }
 .key-catch p{
     font-size: 1.2rem;
-    font-weight: lighter;
 }
 .key-catch h1{
     font-size: 1.5rem;
@@ -210,11 +211,34 @@ a:hover{
     background-size: 20px 20px;
 }
 .main-text{
-    font-weight: lighter;
     line-height: 1.8;
     margin-top: 20px;
     letter-spacing: 0.05rem;
 }
 .main-text p{
     margin-bottom: 15px;
+}
+
+/* --- NRIのDX pdf --- */
+.nri-dx-pdf{
+    background: #434da2;
+    width: 320px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.nri-dx-pdf a{
+    color: #fff;
+    text-decoration: none;
+}
+.nri-dx-pdf p::before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+.nri-dx-pdf a[target="_blank"]::after{
+    content: url(../images/svg/pdf.svg);
 }
