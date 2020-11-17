@@ -242,3 +242,21 @@ a:hover{
 .nri-dx-pdf a[target="_blank"]::after{
     content: url(../images/svg/pdf.svg);
 }
+
+/* --- left/rightリンク --- */
+.nri-left-right{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.nri-left-right a{
+    text-decoration: none;
+}
+.nri-left-right li:first-child::before{
+    content: "<";
+    margin-right: 0.2rem;
+}
+.nri-left-right li:last-child::after{
+    content: ">";
+    margin-left: 0.2rem;
+}
