@@ -201,3 +201,20 @@ a:hover{
 .share-list li:first-child{
     margin-right: 10px;
 }
+
+/* --- main --- */
+.nri-heading{
+    font-size: 1.2rem;
+    padding-left: 30px;
+    background: url(../images/logo.png) no-repeat left;
+    background-size: 20px 20px;
+}
+.main-text{
+    font-weight: lighter;
+    line-height: 1.8;
+    margin-top: 20px;
+    letter-spacing: 0.05rem;
+}
+.main-text p{
+    margin-bottom: 15px;
+}
