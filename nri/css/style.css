@@ -434,3 +434,40 @@ a:hover{
     margin-bottom: 15px;
     font-size: 1rem;
 }
+
+/* ===== footer ===== */
+/* border */
+.footer-border{
+    border-top: 1px solid #a9a9a9;
+    margin: 50px 0;
+}
+/* footer */
+.footer-container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.footer-list a{
+    text-decoration: none;
+    color: #a9a9a9;
+}
+.footer-list ul{
+    display: flex;
+    list-style: none;
+    font-size: 0.75rem;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.footer-list li::after{
+    content: "|";
+    font-size: 0.6rem;
+    margin-left: 20px;
+}
+.footer-list li:last-child::after{
+    content: none;
+}
+
+/* --- copyright --- */
+.copyright{
+    font-size: 0.1rem;
+    margin-bottom: 50px;
+}
