@@ -163,7 +163,7 @@ a:hover{
     height: 250px;
     background-position: 0 -276px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* ----- key-visual（文字） ----- */
@@ -311,4 +311,49 @@ a:hover{
     justify-content: space-around;
     margin: 20px 10px 0 10px;
     text-align: center;
+}
+
+/* ===== info ===== */
+/* --- 大見出し --- */
+.info-container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.nri-heading-info{
+    margin-top: 50px;
+    padding: 30px 0;
+    font-size: 1.3rem;
+    border-top: 2px solid #111;
+    border-bottom: 1px dotted #a9a9a9;
+}
+
+/* --- 各グループ --- */
+.info-sub-container{
+    padding: 25px 0;
+    border-bottom: 1px dotted #a9a9a9;
+}
+.nri-heading-2{
+    font-weight: bold;
+}
+.info-list a{
+    text-decoration: none;
+}
+.info-list ul{
+    list-style-type: none;
+    font-size: 0.9rem;
+    justify-content: space-between;
+}
+.info-list li{
+    display: inline-block;
+    width: 220px;
+    padding: 10px 0 10px 20px;
+    position: relative;
+    z-index: 1;
+}
+.info-list li::before{
+    content: ">";
+    font-size: 0.2rem;
+    position: absolute;
+    top: 13px;
+    left: 1px;
 }
