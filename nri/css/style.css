@@ -278,12 +278,18 @@ a:hover{
     padding: 20px 0 0 30px;
 }
 /* リスト共通 */
+.nri-strength-list a{
+    text-decoration: none;
+}
 .nri-strength-list li{
+    display: inline-block;
     list-style-type: none;
     width: 230px;
     padding: 15px 10px;
     border: 1px solid #c0c0c0;
     background: #fff;
+    text-align: center;
+    margin: 10px 8.5px;
     position: relative;
     z-index: 1;
 }
@@ -291,26 +297,6 @@ a:hover{
     content: ">";
     left: 10px;
     position: absolute;
-}
-.nri-strength-list a{
-    text-decoration: none;
-}
-/* 上段 */
-.strength-list-top ul{
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 10px 0 10px;
-    text-align: center;
-}
-.strength-list-top li{
-    display: block;
-}
-/* 下段 */
-.strength-list-bottom ul{
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 10px 0 10px;
-    text-align: center;
 }
 
 /* ===== info ===== */
@@ -328,6 +314,7 @@ a:hover{
 }
 
 /* --- 各グループ --- */
+/* 見出し */
 .info-sub-container{
     padding: 25px 0;
     border-bottom: 1px dotted #a9a9a9;
@@ -335,13 +322,14 @@ a:hover{
 .nri-heading-2{
     font-weight: bold;
 }
+
+/* リスト */
 .info-list a{
     text-decoration: none;
 }
 .info-list ul{
     list-style-type: none;
     font-size: 0.9rem;
-    justify-content: space-between;
 }
 .info-list li{
     display: inline-block;
