@@ -381,3 +381,56 @@ a:hover{
     list-style-type: none;
     margin: 0 10px;
 }
+
+/* ===== info-2 ===== */
+/* 全体配置 */
+.info-2-container{
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.info-2-top{
+    display: flex;
+    margin: 50px 0 75px 20px;
+}
+.info-2-bottom{
+    display: flex;
+    margin-left: 20px;
+}
+
+/* リスト */
+.info-2 a{
+    text-decoration: none;
+    color: #111;
+    position: relative;
+    z-index: 1;
+}
+.info-2 ul{
+    list-style-type: none;
+    font-size: 0.9rem;
+}
+.info-2 li{
+    width: 220px;
+    line-height: 2.5;
+    margin-right: 100px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+.info-2 li:first-child{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.info-2 li::before{
+    content: ">";
+    font-weight: normal;
+    font-size: 0.2rem;
+    position: absolute;
+    top: 4px;
+    left: 1px;
+}
+.bold-link li{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
