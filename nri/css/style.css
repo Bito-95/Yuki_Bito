@@ -220,12 +220,12 @@ a:hover{
 /* ----- share ----- */
 .share{
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .share-list{
     display: flex;
     margin-left: auto;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 2;
 }
 .share-list img{
