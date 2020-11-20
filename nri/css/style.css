@@ -304,6 +304,9 @@ a:hover{
 .nri-left-right a{
     text-decoration: none;
 }
+.nri-left-right a:hover{
+    text-decoration: underline;
+}
 .nri-left-right li:first-child::before{
     content: "<";
     margin-right: 0.2rem;
@@ -316,15 +319,16 @@ a:hover{
 /* ----- NRIの強み ----- */
 /* 大枠, 見出し文字 */
 .nri-strength{
+    display: block;
     width: 820px;
-    height: 220px;
-    margin: 30px auto;
+    height: 240px;
+    margin: 50px auto 70px auto;
     background: #33ffff;
 }
 .nri-strength p{
     font-weight: bold;
     font-size: 0.9rem;
-    padding: 20px 0 0 30px;
+    padding: 22px 0 0 20px;
 }
 
 /* リスト詳細 */
@@ -348,7 +352,6 @@ a:hover{
     left: 10px;
     position: absolute;
 }
-
 /* =========================================== info =========================================== */
 /* ----- 全体位置, 大見出し文字 ----- */
 .info-container{
