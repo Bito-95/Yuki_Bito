@@ -360,7 +360,7 @@ a:hover{
 }
 .nri-heading-info{
     font-size: 1.3rem;
-    margin-top: 50px;
+    margin-top: 5px;
     padding: 30px 0;
     border-top: 2px solid #111;
     border-bottom: 1px dotted #a9a9a9;
@@ -369,11 +369,12 @@ a:hover{
 /* ----- リスト, 項目詳細 ----- */
 /* 位置, 見出し文字 */
 .info-sub-container{
-    padding: 25px 0;
+    padding: 20px 0;
     border-bottom: 1px dotted #a9a9a9;
 }
 .nri-heading-2{
     font-weight: bold;
+    padding: 20px 0;
 }
 
 /* リスト詳細 */
