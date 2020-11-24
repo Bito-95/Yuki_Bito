@@ -258,30 +258,21 @@ a:hover{
 }
 
 /* ----- NRIのDX pdf ----- */
-.nri-dx-pdf{
+.nri-dx-pdf a{
+    display: block;
     width: 300px;
     height: 75px;
+    background: #434da2;
     margin: 30px auto 80px auto;
     text-align: center;
-    background: #434da2;
-    position: relative;
-    z-index: 1;
+    text-decoration: none;
 }
 .nri-dx-pdf a:hover{
     opacity: 0.5;
-    background: #33ffff;
-}
-.nri-dx-pdf a{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 .nri-dx-pdf p{
-    display: inline-block;
-    margin-top: 13px;
     color: #fff;
+    padding: 13px 0;
 }
 .nri-dx-pdf p::before{
     content: ">";
@@ -319,39 +310,48 @@ a:hover{
 /* ----- NRIの強み ----- */
 /* 大枠, 見出し文字 */
 .nri-strength{
-    display: block;
     width: 820px;
     height: 240px;
     margin: 50px auto 70px auto;
-    background: #33ffff;
+    background: #00ffff;
 }
-.nri-strength p{
-    font-weight: bold;
+.nri-strength h4{
     font-size: 0.9rem;
     padding: 22px 0 0 20px;
 }
 
 /* リスト詳細 */
+.nri-strength-list ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 10px;
+    padding-left: 0;
+}
+.nri-strength-list p{
+    font-weight: 100;
+    background: #fff;
+    border: 1px solid #c0c0c0;
+    margin: 5px 10px;
+    padding: 15px 0;
+    width: 240px;
+}
 .nri-strength-list a{
     text-decoration: none;
 }
-.nri-strength-list li{
-    display: inline-block;
-    list-style-type: none;
-    width: 230px;
-    padding: 15px 10px;
-    border: 1px solid #c0c0c0;
-    background: #fff;
-    text-align: center;
-    margin: 10px 8.5px;
-    position: relative;
-    z-index: 1;
+.nri-strength-list p:hover{
+    opacity: 0.5;
 }
-.nri-strength-list li::before{
+.nri-strength-list li{
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+}
+.nri-strength-list p::before{
     content: ">";
-    left: 10px;
+    left: 20px;
     position: absolute;
 }
+
 /* =========================================== info =========================================== */
 /* ----- 全体位置, 大見出し文字 ----- */
 .info-container{
