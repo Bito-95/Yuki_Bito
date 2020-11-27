@@ -261,7 +261,6 @@ a:hover{
 .nri-dx-pdf a{
     display: block;
     width: 300px;
-    height: 75px;
     background: #434da2;
     margin: 30px auto 80px auto;
     text-align: center;
@@ -310,13 +309,14 @@ a:hover{
 /* ----- NRIの強み ----- */
 /* 大枠, 見出し文字 */
 .nri-strength{
-    width: 820px;
-    height: 240px;
+    width: 805px;
+    height: 260px;
     margin: 50px auto 70px auto;
     background: #00ffff;
 }
 .nri-strength h4{
     font-size: 0.9rem;
+    margin: 0;
     padding: 22px 0 0 20px;
 }
 
@@ -324,16 +324,23 @@ a:hover{
 .nri-strength-list ul{
     display: flex;
     justify-content: space-around;
-    margin: 20px 10px;
+    margin: 15px 10px 20px 10px;
     padding-left: 0;
 }
 .nri-strength-list p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 100;
     background: #fff;
     border: 1px solid #c0c0c0;
-    margin: 5px 10px;
-    padding: 15px 0;
-    width: 240px;
+    margin: 0 10px;
+    padding: 15px 20px;
+    width: 200px;
+    height: 50px;
+}
+.strength-list-bottom p{
+    height: 25px;
 }
 .nri-strength-list a{
     text-decoration: none;
