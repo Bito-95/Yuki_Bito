@@ -1,0 +1,556 @@
+@charset "utf-8";
+
+/* =========================================== 共通 =========================================== */
+html, body{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+body, div, p, h1, h2, ul{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-weight: lighter;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    color: #0c419a;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* ========================================== header&nav ========================================== */ 
+/* ----- 共通 ----- */
+.header-container{
+    display: flex;
+}
+
+/* ------ header-logo ------ */
+.nri-logo{
+    margin: 0.4rem auto 0.4rem 2.4rem;
+}
+.header-logo img{
+    width: 56px;
+    height: 28px;
+}
+
+/* ----- header-navbar ----- */
+/* 全体位置 */
+.navbar{
+    margin: 0.3rem 1.5rem 0.3rem 0;
+}
+
+/* リスト詳細 */
+.navbar ul{
+    list-style-type: none;
+}
+.navbar-list{
+    display: flex;
+}
+.navbar-list li{
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 0.9rem 0.5rem;
+    text-align: right;
+}
+.navbar-list li:hover{
+    border-bottom: 2px solid #0c419a;
+}
+.navbar-list a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+.navbar-list a:hover{
+    color: #0c419a;
+}
+
+/* ----- header-button ----- */
+/* --- search, global --- */
+/* 位置 */
+.search{
+    margin: 1rem 0;
+}
+.global{
+    margin: 1rem 0;
+}
+
+/* ボタン詳細 */
+.header-btn{
+    display: flex;
+}
+.header-btn button{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.header-btn button:hover{
+    opacity: 0.5;
+}
+.header-btn img{
+    width: 40px;
+    height: 20px;
+    margin: 0.3rem 0;
+}
+
+/* --- hamburger --- */
+/* 位置 */
+.hamburger-btn{
+    position: relative;
+    margin: 0.8rem 0.8rem 0.8rem 0.8rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* ボタン詳細 */
+.ham-line{
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 2px;
+    background-color: #111;
+}
+.line-1{
+    top: 10px;
+}
+.line-2{
+    top: 18px;
+}
+.line-3{
+    top: 27px;
+}
+.hamburger-btn button:hover{
+    opacity: 0.5;
+}
+
+/* -------------------- FIX -------------------- */
+.header-fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    z-index: 99;
+}
+.header-fix-border{
+    padding: 55px 0 118px 0;
+}
+
+/* ========================================== パンくずリスト ========================================== */
+/* 全体位置 */
+.breadcrumb-container{
+    margin-left: 4.7rem;
+    margin-bottom: 1.5rem;
+}
+
+/* リスト詳細 */
+.breadcrumb a{
+    text-decoration: none;
+    color: #a9a9a9;
+}
+.breadcrumb ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb li{
+    display: inline;
+    margin-left: -0.3rem;
+    font-size: 0.7rem;
+}
+.breadcrumb li:first-child{
+    margin-left: 0;
+}
+.breadcrumb li::after{
+    content: ">";
+    margin: 0 0.3rem;
+    color: #696969;
+}
+.breadcrumb li:last-child{
+    color: #a9a9a9;
+}
+.breadcrumb li:last-child::after{
+    content: none;
+}
+
+/* ============================================ key-visual =========================================== */
+/* ----- key-visual（画像） ----- */
+.key-visual{
+    margin: 0;
+    padding: 0;
+    background: url(../images/main.jpg) no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    width: 100%;
+    height: 250px;
+    background-position: 0 -276px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ----- key-visual（文字） ----- */
+.key-catch{
+    position: absolute;
+    color: #fff;
+    line-height: 2.5;
+    top: 25px;
+    left: 200px;
+}
+.key-catch p{
+    font-size: 1.2rem;
+}
+.key-catch h1{
+    font-size: 1.7rem;
+}
+
+/* =========================================== main =========================================== */
+/* ----- main 全体位置 ----- */
+.main-container{
+    margin: 0 auto;
+    max-width: 805px;
+}
+
+/* ----- share ----- */
+.share{
+    display: flex;
+    margin-top: 30px;
+}
+.share-list{
+    display: flex;
+    margin-left: auto;
+    font-size: 0.7rem;
+    line-height: 2;
+}
+.share-list img{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+.share-list li{
+    list-style-type: none;
+}
+.share-list li:first-child{
+    margin-right: 10px;
+}
+
+/* ------------------------- main ------------------------- */
+.nri-heading{
+    font-size: 1.4rem;
+    padding-left: 30px;
+    margin: 40px 0 30px 0;
+    background: url(../images/logo.png) no-repeat left;
+    background-size: 20px 20px;
+}
+.main-text{
+    line-height: 1.8;
+    margin-top: 20px;
+    letter-spacing: 0.05rem;
+}
+.main-text p{
+    margin-bottom: 15px;
+}
+
+/* ----- NRIのDX pdf ----- */
+.nri-dx-pdf a{
+    display: block;
+    width: 300px;
+    background: #434da2;
+    margin: 30px auto 80px auto;
+    text-align: center;
+    text-decoration: none;
+}
+.nri-dx-pdf a:hover{
+    opacity: 0.5;
+}
+.nri-dx-pdf p{
+    color: #fff;
+    padding: 13px 0;
+}
+.nri-dx-pdf p::before{
+    content: ">";
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+.nri-dx-pdf p::after{
+    content: url(../images/svg/pdf.svg);
+}
+
+/* ----- left/rightリンク ----- */
+.nri-left-right{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.nri-left-right a{
+    text-decoration: none;
+}
+.nri-left-right a:hover{
+    text-decoration: underline;
+}
+.nri-left-right li:first-child::before{
+    content: "<";
+    margin-right: 0.2rem;
+}
+.nri-left-right li:last-child::after{
+    content: ">";
+    margin-left: 0.2rem;
+}
+
+/* ----- NRIの強み ----- */
+/* 大枠, 見出し文字 */
+.nri-strength{
+    width: 805px;
+    height: 260px;
+    margin: 50px auto 70px auto;
+    background: #00ffff;
+}
+.nri-strength h4{
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 22px 0 0 20px;
+}
+
+/* リスト詳細 */
+.nri-strength-list ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 10px 20px 10px;
+    padding-left: 0;
+}
+.nri-strength-list p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    background: #fff;
+    border: 1px solid #c0c0c0;
+    margin: 0 10px;
+    padding: 15px 20px;
+    width: 200px;
+    height: 50px;
+}
+.strength-list-bottom p{
+    height: 25px;
+}
+.nri-strength-list a{
+    text-decoration: none;
+}
+.nri-strength-list p:hover{
+    opacity: 0.5;
+}
+.nri-strength-list li{
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+}
+.nri-strength-list p::before{
+    content: ">";
+    left: 20px;
+    position: absolute;
+}
+
+/* =========================================== info =========================================== */
+/* ----- 全体位置, 大見出し文字 ----- */
+.info-container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.nri-heading-info{
+    font-size: 1.3rem;
+    margin-top: 5px;
+    padding: 30px 0;
+    border-top: 2px solid #111;
+    border-bottom: 1px dotted #a9a9a9;
+}
+
+/* ----- リスト, 項目詳細 ----- */
+/* 位置, 見出し文字 */
+.info-sub-container{
+    padding: 20px 0;
+    border-bottom: 1px dotted #a9a9a9;
+}
+.nri-heading-2{
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+/* リスト詳細 */
+.info-list a{
+    text-decoration: none;
+}
+.info-list a:hover{
+    text-decoration: underline;
+}
+.info-list ul{
+    list-style-type: none;
+    font-size: 0.9rem;
+}
+.info-list li{
+    display: inline-block;
+    width: 220px;
+    padding: 10px 0 10px 20px;
+    position: relative;
+    z-index: 1;
+}
+.info-list li::before{
+    content: ">";
+    font-size: 0.2rem;
+    position: absolute;
+    top: 13px;
+    left: 1px;
+}
+
+/* ----- 前のページに戻る ----- */
+.return-page a{
+    text-decoration: none;
+    line-height: 10;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+.return-page a:hover{
+    text-decoration: underline;
+}
+.return-page a::before{
+    content: "<";
+    font-size: 0.2rem;
+    color: #111;
+    position: absolute;
+    top: -42px;
+    left: 1px;
+}
+
+/* =========================================== Follow Us =========================================== */
+/* 全体レイアウト */
+.follow-us{
+    display: flex;
+    border-top: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    margin-top: 20px;
+    padding: 30px 0;
+    justify-content: center;
+}
+
+/* 詳細レイアウト */
+.follow-us p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+.follow-us img{
+    width: 28px;
+    height: 28px;
+}
+.follow-us li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+/* =========================================== info-2 =========================================== */
+/* 全体配置 */
+.info-2-container{
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.info-2-top{
+    display: flex;
+    margin: 50px 0 75px 20px;
+}
+.info-2-bottom{
+    display: flex;
+    margin-left: 20px;
+}
+
+/* リスト全体 */
+.info-2 a{
+    text-decoration: none;
+    color: #111;
+}
+.info-2 a:hover{
+    text-decoration: underline;
+}
+.info-2 li{
+    list-style-type: none;
+    font-size: 0.9rem;
+    width: 220px;
+    line-height: 2.5;
+    margin-right: 100px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+.info-2 li:first-child{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.info-2 li::before{
+    content: ">";
+    font-weight: normal;
+    font-size: 0.2rem;
+    position: absolute;
+    top: 7px;
+    left: 1px;
+}
+
+/* 太文字リスト */
+.bold-link li{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* =========================================== footer =========================================== */
+/* ----- footer上部 border ----- */
+.footer-border{
+    border-top: 1px solid #a9a9a9;
+    margin: 50px 0 70px 0;
+}
+
+/* ----- footer ----- */
+/* 全体配置 */
+.footer-container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* リスト詳細 */
+.footer-list a{
+    text-decoration: none;
+    color: #a9a9a9;
+}
+.footer-list a:hover{
+    text-decoration: underline;
+}
+.footer-list ul{
+    display: flex;
+    list-style: none;
+    font-size: 0.75rem;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer-list li::after{
+    content: "|";
+    font-size: 0.6rem;
+    margin-left: 20px;
+}
+.footer-list li:last-child::after{
+    content: none;
+}
+
+/* ------------------------- copyright ------------------------- */
+.copyright{
+    font-size: 0.1rem;
+    margin-bottom: 120px;
+}
