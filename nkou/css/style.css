@@ -17,3 +17,43 @@ a{
     color: #111;
     text-decoration: none;
 }
+
+/* ======================================== header & nav ======================================== */
+/* 最上段header */
+.top-header{
+    display: flex;
+    background-color: #ccffff;
+}
+.top-header p{
+    font-size: 0.8rem;
+    color: #a9a9a9;
+    padding: 10px 0;
+    margin-left: 130px;
+}
+.top-header-list{
+    margin: 0 150px 0 auto;
+    padding: 0;
+}
+.top-header-list ul{
+    display: flex;
+    list-style-type: none;
+    padding: 5px 0;
+}
+.top-header-list li{
+    border-right: 1px solid #dcdcdc;
+    line-height: 1.1;
+}
+.top-header-list a{
+    font-size: 0.8rem;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+.top-header-list li:last-child{
+    padding-left: 13px;
+    background: url(../images/svg/login.svg) no-repeat left;
+    border-right: none;
+}
+.top-list-last{
+    color: #330066;
+    font-weight: bold;
+}
