@@ -152,3 +152,42 @@ a{
 .nav-two-lines p{
     padding: 0 30px;
 }
+
+/* ======================================== key-visual ======================================== */
+/* 画像 */
+.key-visual{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(17,17,17,1), transparent), url(../images/nkou_key.jpg) no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* 文字 */
+.key-catch{
+    position: absolute;
+    color: #fff;
+    top: 200px;
+    left: 120px;
+}
+.key-underline p{
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    font-family: PT Serif;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #fff;
+}
+.key-catch h2{
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+}
+.key-catch h3{
+    line-height: 2.2;
+    letter-spacing: 4px;
+}
