@@ -191,3 +191,62 @@ a{
     line-height: 2.2;
     letter-spacing: 4px;
 }
+
+/* ======================================== main ======================================== */
+/* -------------------- education -------------------- */
+/* heading */
+.heading{
+    display: block;
+    position: relative;
+    background: #66ffff;
+    text-align: center;
+    padding: 60px 0;
+    font-size: 1.5rem;
+    color: #330066;
+    letter-spacing: 4px;
+}
+.heading ::after{
+    position: absolute;
+    content: '';
+    border-right: 1px solid #330066;
+    height: 80px;
+    left: 50%;
+    top: 130px;
+}
+
+/* contents */
+.education-contents{
+    max-width: 1100px;
+    margin: 100px auto 0 auto;
+}
+.education-contents p{
+    letter-spacing: 1.2px;
+    line-height: 2;
+}
+
+/* education-contents-2 */
+.education-contents-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.education-image img{
+    height: 300px;
+    width: 350px;
+}
+.education-item li{
+    list-style-type: none;
+    text-align: center;
+    background: #66ffff;
+    padding: 13px 35px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+.education-item p{
+    line-height: 1.7;
+}
+.bold-font{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #330066;
+}
