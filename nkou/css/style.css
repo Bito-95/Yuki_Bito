@@ -156,14 +156,15 @@ a{
 /* ======================================== key-visual ======================================== */
 /* 画像 */
 .key-visual{
+    position: relative;
+    z-index: 1;
     padding: 0;
     margin: 0;
     background: linear-gradient(90deg, rgba(17,17,17,1), transparent), url(../images/nkou_key.jpg) no-repeat;
     background-size: cover;
     height: 700px;
     width: 100%;
-    position: relative;
-    z-index: 1;
+    left: -130px;
 }
 
 /* 文字 */
@@ -171,7 +172,7 @@ a{
     position: absolute;
     color: #fff;
     top: 200px;
-    left: 120px;
+    left: 230px;
 }
 .key-underline p{
     display: inline-block;
@@ -194,7 +195,7 @@ a{
 
 /* ======================================== main ======================================== */
 /* -------------------- education -------------------- */
-/* heading */
+/* heading（education & features） */
 .heading{
     display: block;
     position: relative;
@@ -228,7 +229,7 @@ a{
 .education-contents-2{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 .education-image img{
     height: 300px;
@@ -248,5 +249,20 @@ a{
 .bold-font{
     font-size: 1.2rem;
     font-weight: bold;
+    color: #330066;
+}
+
+/* -------------------- features -------------------- */
+/* 共通 */
+.features-container{
+    max-width: 1100px;
+    margin: 100px auto 0 auto;
+}
+.features-item{
+    display: flex;
+}
+.feature-number p{
+    font-family: 'Gelasio', serif;
+    font-size: 2rem;
     color: #330066;
 }
