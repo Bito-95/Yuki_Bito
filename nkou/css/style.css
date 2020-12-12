@@ -156,23 +156,19 @@ a{
 /* ======================================== key-visual ======================================== */
 /* 画像 */
 .key-visual{
-    position: relative;
-    z-index: 1;
     padding: 0;
     margin: 0;
     background: linear-gradient(90deg, rgba(17,17,17,1), transparent), url(../images/nkou_key.jpg) no-repeat;
-    background-size: cover;
-    height: 700px;
-    width: 100%;
-    left: -130px;
+    background-position: right 0px;
+    height: 650px;
 }
 
 /* 文字 */
 .key-catch{
     position: absolute;
     color: #fff;
-    top: 200px;
-    left: 230px;
+    top: 400px;
+    left: 80px;
 }
 .key-underline p{
     display: inline-block;
@@ -201,6 +197,7 @@ a{
     position: relative;
     background: #66ffff;
     text-align: center;
+    margin: 0;
     padding: 60px 0;
     font-size: 1.5rem;
     color: #330066;
