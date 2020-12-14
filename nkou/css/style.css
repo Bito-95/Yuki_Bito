@@ -215,7 +215,7 @@ a{
 /* contents */
 .education-contents{
     max-width: 1100px;
-    margin: 100px auto 0 auto;
+    margin: 70px auto 0 auto;
 }
 .education-contents p{
     letter-spacing: 1.2px;
@@ -257,9 +257,137 @@ a{
 }
 .features-item{
     display: flex;
+    margin-top: 100px;
+    align-items: flex-end;
+}
+.feature-item-1-1 ,.feature-item-1-2
+,.feature-item-2-1 ,.feature-item-2-2
+,.feature-item-3-1 ,.feature-item-3-2{
+    width: 550px;
+}
+.feature-item-1-1 ,.feature-item-2-2 ,.feature-item-3-1{
+    margin-right: 30px;
+}
+.feature-item-1-2 ,.feature-item-2-1 ,.feature-item-3-2{
+    margin-left: auto;
+}
+
+/* コンテンツ共通 */
+.feature-image img{
+    width: 500px;
+    height: 380px;
+    border-radius: 10px;
 }
 .feature-number p{
     font-family: 'Gelasio', serif;
-    font-size: 2rem;
+    font-size: 3.8rem;
+    letter-spacing: 7px;
+    color: #330066;
+}
+.feature-heading h3{
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 1.7;
+    margin: 0;
+}
+.feature-text p{
+    letter-spacing: 1.5px;
+    line-height: 2;
+    margin: 20px 0;
+}
+.feature-link a{
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #330066;
+    padding-right: 20px;
+    background: url(../images/svg/link_arrow.svg) no-repeat right top;
+    margin-right: 17px;
+}
+
+/* feature位置レイアウト */
+.feature-item-2-1{
+    order: 2;
+}
+.feature-item-2-2{
+    order: 1;
+}
+
+/* ----- ネット・リアル まとめリスト ----- */
+.net-real-list{
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #66ffff;
+}
+.net-real-list h4{
+    padding: 25px 0 0 30px;
+}
+.net-real-list p{
+    padding: 10px 0 25px 30px;
+}
+.net-real-list ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 30px;
+}
+.net-real-list li{
+    padding: 0 20px 0 15px;
+    position: relative;
+}
+.net-real-list li::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #330066;
+    top: 13px;
+    left: 0;
+}
+
+/* ----- ネットの高校とは ----- */
+/* 全体レイアウト */
+.what-nkou{
+    display: flex;
+    margin-top: 80px;
+    padding: 0;
+    width: 1100px;
+    background: #66ffff;
+}
+.what-nkou-heading{
+    margin: 100px 0;
+    width: 400px;
+}
+.what-list-left ,.what-list-right{
+    margin: 0;
+    width: 350px;
+}
+
+/* コンテンツレイアウト */
+.what-nkou-heading h3{
+    margin: 0;
+    padding: 37px 0;
+    font-size: 1.4rem;
+    color: #330066;
+    text-align: center;
+}
+.what-nkou-list{
+    display: flex;
+    margin: 10px 0;
+}
+.what-nkou-list li{
+    border-bottom: 1px solid #ccc;
+}
+.what-nkou-list li:last-child{
+    border-bottom: none;
+}
+.what-nkou-list ul{
+    list-style-type: none;
+    margin: 10px 20px 10px 0;
+}
+.what-nkou-list li{
+    padding: 10px 0
+}
+.what-list-left li:first-child{
     color: #330066;
 }
