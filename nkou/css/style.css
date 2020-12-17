@@ -391,3 +391,157 @@ a{
 .what-list-left li:first-child{
     color: #330066;
 }
+
+/* ======================================== CONTACT ======================================== */
+/* ----- 共通 ----- */
+.contact-container{
+    display: flex;
+    margin-top: 100px;
+    background: #330066;
+    color: #fff;
+    justify-content: center;
+}
+.contact-container ul{
+    display: flex;
+    list-style-type: none;
+}
+.contact-left ,.contact-right{
+    margin: 50px;
+}
+.contact-left{
+    padding: 30px 0;
+}
+.tell-font{
+    font-family: 'PT Sans Narrow';
+}
+.font-light{
+    font-weight: normal;
+}
+
+/* ----- 左コンテンツ ----- */
+.contact-left h2{
+    display: inline;
+    margin: 0 110px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: PT Serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
+}
+.contact-left p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* ----- 右コンテンツ ----- */
+/* コンテンツ上段 */
+.contact-link-fill a{
+    display: block;
+    background: #fff;
+    color: #330066;
+    border-radius: 5px;
+    width: 200px;
+    padding: 18px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.contact-link-fill th{
+    padding-right: 23px;
+}
+.contact-link-fill th::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/svg/icon_blank.svg);
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 95px;
+    top: -40px;
+}
+.before-book a::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/svg/book.svg);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    position: relative;
+    top: 6px;
+    right: 5px;
+}
+.before-bubble a::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/svg/bubble.svg);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    position: relative;
+    top: 6px;
+    right: 8px;
+}
+
+/* コンテンツ中段 */
+.contact-supplement p{
+    display: block;
+    font-size: 0.9rem;
+    width: 200px;
+    padding: 0px 20px;
+    text-align: center;   
+}
+.contact-supplement td{
+    padding-right: 23px;
+}
+
+/* コンテンツ下段 */
+.contact-link-transparent a{
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 200px;
+    padding: 18px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.contact-link-transparent th{
+    padding-right: 23px;
+}
+.before-tell a{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+}
+.before-tell a::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/svg/icon_call_white.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain; 
+    position: relative;
+    top: 3px;
+    right: 10px;   
+}
+.after-blank a::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/svg/icon_blank_white.svg);
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 14px;
+}
+
+/* コンテンツ 営業時間 */
+.contact-hours p{
+    display: block;
+    width: 200px;
+    padding: 0px 20px;
+    font-size: 0.9rem;
+    color: #00ccff;
+    text-align: center;
+}
