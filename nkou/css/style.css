@@ -545,3 +545,41 @@ a{
     color: #00ccff;
     text-align: center;
 }
+
+/* ======================================== relation(関連スクール) ======================================== */
+/* 見出し */
+.relation-heading h2{
+    text-align: center;
+}
+
+/* コンテンツ */
+.relation-list ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.relation-list figure{
+    margin: 13px;
+}
+.relation-image{
+    margin: 0;
+    padding: 0;
+}
+.Nchu-logo img{
+    width: 130px;
+    margin: 14px 109px;
+}
+.Nlabo-logo img{
+    width: 200px;
+    margin: 18px 74px;
+}
+.relation-image img{
+    width: 350px;
+    height: 130px;
+    vertical-align: bottom;
+}
+figcaption{
+    border: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    height: 60px;
+}
