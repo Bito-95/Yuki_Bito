@@ -583,3 +583,31 @@ figcaption{
     border-radius: 0 0 10px 10px;
     height: 60px;
 }
+
+/* ======================================== パンくずリスト ======================================== */
+.breadcrumb-border-top{
+    border-top: 1px solid #ccc;
+}
+.breadcrumb-border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+.breadcrumb{
+    max-width: 1100px;
+    margin: 10px auto;
+    font-size: 0.9rem;
+}
+.breadcrumb a{
+    color: #330066;
+}
+.breadcrumb ul{
+    display: flex;
+    list-style-type: none;
+}
+.breadcrumb li::after{
+    content: ">";
+    margin: 0 10px;
+    color: #330066;
+}
+.breadcrumb li:last-child::after{
+    content: none;
+}
