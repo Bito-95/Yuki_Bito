@@ -52,6 +52,9 @@ a{
     padding: 10px 0;
     margin: 0 10px;
 }
+.top-header-list a:hover{
+    color: #330066;
+}
 .top-header-list li:last-child{
     padding-left: 13px;
     background: url(../images/svg/login.svg) no-repeat left;
@@ -60,6 +63,9 @@ a{
 .top-list-last{
     color: #330066;
     font-weight: bold;
+}
+a.top-list-last:hover{
+    opacity: 0.7;
 }
 
 /* ---------- メインheader ---------- */
@@ -74,6 +80,9 @@ a{
 }
 .header-logo img{
     width: 350px;
+}
+.header-logo img:hover{
+    opacity: 0.7;
 }
 
 /* 電話番号 */
@@ -97,6 +106,9 @@ a{
     background-size: 24px 24px;
     padding-left: 28px;
 }
+.header-tel a:hover{
+    opacity: 0.7;
+}
 .header-tel p{
     font-size: 0.75rem;
     color: #a9a9a9;
@@ -117,6 +129,9 @@ a{
     color: #fff;
     text-align: center;
     font-weight: bold;
+}
+.header-link a:hover{
+    opacity: 0.7;
 }
 .normal-font{
     font-size: 0.9rem;
@@ -151,6 +166,9 @@ a{
 }
 .nav-last-child a{
     border-right: none;
+}
+.navbar a:hover{
+    color: #330066;
 }
 .navbar p{
     display: block;
@@ -311,6 +329,9 @@ a{
     background: url(../images/svg/link_arrow.svg) no-repeat right top;
     margin-right: 17px;
 }
+.feature-link a:hover{
+    opacity: 0.7;
+}
 
 /* feature位置レイアウト */
 .feature-item-experience{
@@ -369,6 +390,9 @@ a{
 .what-list-left ,.what-list-right{
     margin: 0;
     width: 350px;
+}
+.what-nkou a:hover{
+    color: #330066;
 }
 
 /* コンテンツレイアウト */
@@ -448,9 +472,12 @@ p.contact-subheading{
     color: #330066;
     border-radius: 5px;
     width: 200px;
-    padding: 18px 20px;
+    padding: 12px 20px;
     text-align: center;
     font-weight: bold;
+}
+.contact-link-fill a:hover{
+    background: #f5f5f5;
 }
 th.contact-link-fill{
     padding: 80px 23px 0 0;
@@ -507,9 +534,12 @@ td.contact-supplement{
     border: 1px solid #fff;
     border-radius: 5px;
     width: 200px;
-    padding: 18px 20px;
+    padding: 12px 20px;
     text-align: center;
     font-weight: bold;
+}
+.contact-link-transparent a:hover{
+    background-color: #575fa5;
 }
 th.contact-link-transparent{
     padding-right: 23px;
@@ -517,7 +547,7 @@ th.contact-link-transparent{
 a.before-tell{
     font-size: 1.3rem;
     letter-spacing: 2px;
-    padding: 15px 20px;
+    padding: 9px 20px;
 }
 a.before-tell::before{
     content: "";
@@ -586,8 +616,11 @@ td.contact-hours{
     height: 130px;
     vertical-align: bottom;
 }
+.relation-list img:hover{
+    opacity: 0.7;
+}
 figcaption{
-    border: 1px solid #ccc;
+    border: 1px solid #dcdcdc;
     border-radius: 0 0 10px 10px;
     height: 60px;
 }
@@ -606,6 +639,9 @@ figcaption{
 }
 .breadcrumb a{
     color: #330066;
+}
+.breadcrumb a:hover{
+    opacity: 0.7;
 }
 .breadcrumb ul{
     display: flex;
@@ -638,6 +674,9 @@ figcaption{
     margin: 10px 0;
     letter-spacing: 1.5px;
 }
+.info-container a:hover{
+    color: #330066;
+}
 
 /* info1 */
 .left-info-container h3{
@@ -646,6 +685,9 @@ figcaption{
     color: #330066;
     margin: 0;
     padding: 0;
+}
+.left-info-container h3:hover{
+    opacity: 0.7;
 }
 .left-info-container{
     display: flex;
@@ -698,6 +740,9 @@ h3.top-margin{
 .SNS-list img{
     width: 33px;
     height: 33px;
+}
+.SNS-list img:hover{
+    opacity: 0.7;
 }
 .SNS-list li{
     display: inline-block;
