@@ -80,21 +80,28 @@ a{
 .header-tel{
     margin-left: 250px;
 }
+.header-tel h4{
+    font-size: 0.7rem;
+    color: #330066;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 .header-tel a{
     font-family: 'PT Sans Narrow';
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
     font-weight: bold;
     color: #330066;
     background: url(../images/svg/call.svg) no-repeat left;
-    background-size: 25px 25px;
-    padding-left: 32px;
+    background-size: 24px 24px;
+    padding-left: 28px;
 }
 .header-tel p{
     font-size: 0.75rem;
     color: #a9a9a9;
+    text-align: center;
     margin: 0;
-    padding-left: 40px;
 }
 
 /* リンク */
@@ -105,13 +112,14 @@ a{
     display: block;
     width: 130px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     background: #330066;
     color: #fff;
     text-align: center;
     font-weight: bold;
 }
 .normal-font{
+    font-size: 0.9rem;
     font-weight: normal;
 }
 .header-link ul{
@@ -546,9 +554,13 @@ td.contact-hours{
 /* 見出し */
 .relation-heading h2{
     text-align: center;
+    margin-top: 70px;
 }
 
 /* コンテンツ */
+.relation-list{
+    margin-bottom: 70px;
+}
 .relation-list ul{
     display: flex;
     list-style-type: none;
