@@ -401,10 +401,6 @@ a{
     color: #fff;
     justify-content: center;
 }
-.contact-container ul{
-    display: flex;
-    list-style-type: none;
-}
 .contact-left ,.contact-right{
     margin: 50px;
 }
@@ -419,7 +415,7 @@ a{
 }
 
 /* ----- 左コンテンツ ----- */
-.contact-left h2{
+h2.contact-heading{
     display: inline;
     margin: 0 110px;
     text-align: center;
@@ -429,7 +425,7 @@ a{
     letter-spacing: 2px;
     border-bottom: 1px solid #fff;
 }
-.contact-left p{
+p.contact-subheading{
     text-align: center;
     margin-top: 20px;
     font-size: 1.8rem;
@@ -448,10 +444,10 @@ a{
     text-align: center;
     font-weight: bold;
 }
-.contact-link-fill th{
-    padding-right: 23px;
+th.contact-link-fill{
+    padding: 80px 23px 0 0;
 }
-.contact-link-fill th::after{
+th.contact-link-fill::after{
     content: "";
     display: inline-block;
     background-image: url(../images/svg/icon_blank.svg);
@@ -461,7 +457,7 @@ a{
     left: 95px;
     top: -40px;
 }
-.before-book a::before{
+a.before-book::before{
     content: "";
     display: inline-block;
     background-image: url(../images/svg/book.svg);
@@ -472,7 +468,7 @@ a{
     top: 6px;
     right: 5px;
 }
-.before-bubble a::before{
+a.before-bubble::before{
     content: "";
     display: inline-block;
     background-image: url(../images/svg/bubble.svg);
@@ -490,10 +486,10 @@ a{
     font-size: 0.9rem;
     width: 200px;
     padding: 0px 20px;
-    text-align: center;   
+    text-align: center;
 }
-.contact-supplement td{
-    padding-right: 23px;
+td.contact-supplement{
+    padding-bottom: 5px;
 }
 
 /* コンテンツ下段 */
@@ -507,15 +503,15 @@ a{
     text-align: center;
     font-weight: bold;
 }
-.contact-link-transparent th{
+th.contact-link-transparent{
     padding-right: 23px;
 }
-.before-tell a{
+a.before-tell{
     font-size: 1.3rem;
     letter-spacing: 2px;
     padding: 15px 20px;
 }
-.before-tell a::before{
+a.before-tell::before{
     content: "";
     display: inline-block;
     background-image: url(../images/svg/icon_call_white.svg);
@@ -526,7 +522,7 @@ a{
     top: 3px;
     right: 10px;   
 }
-.after-blank a::after{
+a.after-blank::after{
     content: "";
     display: inline-block;
     background-image: url(../images/svg/icon_blank_white.svg);
@@ -537,10 +533,10 @@ a{
 }
 
 /* コンテンツ 営業時間 */
-.contact-hours p{
+td.contact-hours{
     display: block;
     width: 200px;
-    padding: 0px 20px;
+    padding: 5px 20px 40px 20px;
     font-size: 0.9rem;
     color: #00ccff;
     text-align: center;
