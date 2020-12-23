@@ -30,7 +30,7 @@ a{
     font-size: 0.8rem;
     color: #a9a9a9;
     padding: 10px 0;
-    margin-left: 130px;
+    margin-left: 160px;
 }
 
 /* ----- リスト ----- */
@@ -53,7 +53,7 @@ a{
 .top-header-list a{
     font-size: 0.8rem;
     padding: 10px 0;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 .top-header-list a:hover{
     color: #330066;
@@ -63,6 +63,7 @@ a{
 .top-header-list li:last-child{
     padding-left: 13px;
     background: url(../images/svg/login.svg) no-repeat left;
+    background-position: 5px 0;
     border-right: none;
 }
 .top-list-last{
@@ -82,7 +83,7 @@ a.top-list-last:hover{
 /* ----- ロゴ ----- */
 /* 位置 */
 .header-logo{
-    margin-left: 130px;
+    margin-left: 160px;
 }
 
 /* 画像 */
@@ -536,7 +537,7 @@ th.contact-link-fill::after{
     height: 15px;
     position: relative;
     left: 95px;
-    top: -40px;
+    top: -36px;
 }
 a.before-book::before{
     content: "";
