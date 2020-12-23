@@ -19,13 +19,13 @@ a{
 }
 
 /* ======================================== header ======================================== */
-/* ---------- 最上段header ---------- */
+/* -----===== 最上段ヘッダー =====----- */
 .top-header{
     display: flex;
     background-color: #ccffff;
 }
 
-/* テキスト */
+/* ----- テキスト ----- */
 .top-header p{
     font-size: 0.8rem;
     color: #a9a9a9;
@@ -33,11 +33,14 @@ a{
     margin-left: 130px;
 }
 
-/* リスト */
+/* ----- リスト ----- */
+/* 全体レイアウト */
 .top-header-list{
     margin: 0 150px 0 auto;
     padding: 0;
 }
+
+/* リスト */
 .top-header-list ul{
     display: flex;
     list-style-type: none;
@@ -55,6 +58,8 @@ a{
 .top-header-list a:hover{
     color: #330066;
 }
+
+/* last-child（生徒用ログイン） */
 .top-header-list li:last-child{
     padding-left: 13px;
     background: url(../images/svg/login.svg) no-repeat left;
@@ -68,16 +73,19 @@ a.top-list-last:hover{
     opacity: 0.7;
 }
 
-/* ---------- メインheader ---------- */
+/* -----===== メインヘッダー =====----- */
 .main-header{
     display: flex;
     margin: 20px 0;
 }
 
-/* ロゴ */
+/* ----- ロゴ ----- */
+/* 位置 */
 .header-logo{
     margin-left: 130px;
 }
+
+/* 画像 */
 .header-logo img{
     width: 350px;
 }
@@ -85,10 +93,13 @@ a.top-list-last:hover{
     opacity: 0.7;
 }
 
-/* 電話番号 */
+/* ----- 電話番号 ----- */
+/* 位置 */
 .header-tel{
     margin-left: 250px;
 }
+
+/* 見出し */
 .header-tel h4{
     font-size: 0.7rem;
     color: #330066;
@@ -96,6 +107,8 @@ a.top-list-last:hover{
     margin: 0;
     padding: 0;
 }
+
+/* 電話番号 */
 .header-tel a{
     font-family: 'PT Sans Narrow';
     font-size: 1.5rem;
@@ -109,6 +122,8 @@ a.top-list-last:hover{
 .header-tel a:hover{
     opacity: 0.7;
 }
+
+/* 補足（営業時間） */
 .header-tel p{
     font-size: 0.75rem;
     color: #a9a9a9;
@@ -116,9 +131,21 @@ a.top-list-last:hover{
     margin: 0;
 }
 
-/* リンク */
+/* ----- リンク ----- */
+/* 位置 */
 .header-link{
     margin-left: 10px;
+}
+
+/* リンク */
+.header-link ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.header-link li{
+    margin: 5px;
 }
 .header-link a{
     display: block;
@@ -137,22 +164,24 @@ a.top-list-last:hover{
     font-size: 0.9rem;
     font-weight: normal;
 }
-.header-link ul{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.header-link li{
-    margin: 5px;
-}
 
 /* ======================================== nav ======================================== */
+/* 全体位置 */
 .navbar ul{
     display: flex;
     list-style-type: none;
     margin: 15px 0;
     justify-content: center;
+}
+
+/* レイアウト */
+.navbar p{
+    display: block;
+    margin: 0;
+    padding: 10px 30px;
+}
+.nav-two-lines p{
+    padding: 0 30px;
 }
 .navbar a{
     display: block;
@@ -170,17 +199,9 @@ a.top-list-last:hover{
 .navbar a:hover{
     color: #330066;
 }
-.navbar p{
-    display: block;
-    margin: 0;
-    padding: 10px 30px;
-}
-.nav-two-lines p{
-    padding: 0 30px;
-}
 
 /* ======================================== key-visual ======================================== */
-/* 画像 */
+/* ----- 画像 ----- */
 .key-visual{
     padding: 0;
     margin: 0;
@@ -189,13 +210,16 @@ a.top-list-last:hover{
     height: 650px;
 }
 
-/* 文字 */
+/* ----- 文字 ----- */
+/* 位置 */
 .key-catch{
     position: absolute;
     color: #fff;
     top: 400px;
     left: 80px;
 }
+
+/* 装飾 */
 .key-underline p{
     display: inline-block;
     padding-bottom: 2px;
@@ -216,8 +240,7 @@ a.top-list-last:hover{
 }
 
 /* ======================================== main ======================================== */
-/* -------------------- education -------------------- */
-/* heading（education & features） */
+/* -----===== 共通見出し（教育方針・特長） =====----- */
 .heading{
     display: block;
     position: relative;
@@ -238,26 +261,28 @@ a.top-list-last:hover{
     top: 130px;
 }
 
-/* 共通 */
+/* -----===== ネットの高校の教育方針 =====-----  */
+/* ----- 全体レイアウト ----- */
 .education-container{
     max-width: 1100px;
     margin: 70px auto 0 auto;
 }
+
+/* ----- 見出し文 ----- */
 .education-container p{
     letter-spacing: 1.2px;
     line-height: 2;
 }
 
-/* education-contents */
+/* ----- コンテンツ ----- */
+/* 全体位置 */
 .education-contents{
     display: flex;
     justify-content: center;
     margin: 50px 0;
 }
-.education-image img{
-    height: 300px;
-    width: 350px;
-}
+
+/* レイアウト */
 .education-item li{
     list-style-type: none;
     text-align: center;
@@ -269,23 +294,34 @@ a.top-list-last:hover{
 .education-item p{
     line-height: 1.7;
 }
+
+/* 装飾 */
+.education-image img{
+    height: 300px;
+    width: 350px;
+}
 .bold-font{
     font-size: 1.2rem;
     font-weight: bold;
     color: #330066;
 }
 
-/* -------------------- features -------------------- */
-/* 共通 */
+/* -----===== ネットの高校の特長 =====----- */
+/* ----- 全体位置 ----- */
 .features-container{
     max-width: 1100px;
     margin: 100px auto 0 auto;
 }
+
+/* ----- 共通レイアウト ----- */
+/* 位置 */
 .features-item{
     display: flex;
     margin-top: 100px;
     align-items: flex-end;
 }
+
+/* 各コンテンツ（サイズ・位置） */
 .feature-item-schedule ,.feature-item-schedule-image
 ,.feature-item-experience ,.feature-item-experience-image
 ,.feature-item-ICT ,.feature-item-ICT-image{
@@ -298,12 +334,14 @@ a.top-list-last:hover{
     margin-left: auto;
 }
 
-/* コンテンツ共通 */
+/* 画像 */
 .feature-image img{
     width: 500px;
     height: 380px;
     border-radius: 10px;
 }
+
+/* 文字 */
 .feature-number p{
     font-family: 'Gelasio', serif;
     font-size: 3.8rem;
@@ -321,6 +359,8 @@ a.top-list-last:hover{
     line-height: 2;
     margin: 20px 0;
 }
+
+/* リンク */
 .feature-link a{
     font-weight: bold;
     font-size: 0.9rem;
@@ -333,7 +373,7 @@ a.top-list-last:hover{
     opacity: 0.7;
 }
 
-/* feature位置レイアウト */
+/* ----- 02（経験）レイアウト ----- */
 .feature-item-experience{
     order: 2;
 }
@@ -341,19 +381,24 @@ a.top-list-last:hover{
     order: 1;
 }
 
-/* ----- ネット・リアル まとめリスト ----- */
+/* ----- 03-2（ICTツールリスト） ----- */
+/* 位置・サイズ */
 .net-real-list{
     width: 950px;
     margin: 0 auto;
     margin-top: 40px;
     background: #66ffff;
 }
+
+/* 文字 */
 .net-real-list h4{
     padding: 25px 0 0 30px;
 }
 .net-real-list p{
     padding: 10px 0 25px 30px;
 }
+
+/* リスト */
 .net-real-list ul{
     display: flex;
     list-style-type: none;
@@ -374,58 +419,63 @@ a.top-list-last:hover{
     left: 0;
 }
 
-/* ----- ネットの高校とは ----- */
-/* 全体レイアウト */
-.what-nkou{
+/* -----===== ネットの高校とは =====----- */
+/* ----- 全体位置 ----- */
+.about{
     display: flex;
     margin-top: 80px;
     padding: 0;
     width: 1100px;
     background: #66ffff;
 }
-.what-nkou-heading{
-    margin: 100px 0;
-    width: 400px;
-}
-.what-list-left ,.what-list-right{
+
+/* ----- コンテンツ ----- */
+/* コンテンツ内 領域 */
+.about-list-left ,.about-list-right{
     margin: 0;
     width: 350px;
 }
-.what-nkou a:hover{
-    color: #330066;
-}
 
-/* コンテンツレイアウト */
-.what-nkou-heading h3{
+/* 左段（見出し） */
+.about-heading{
+    margin: 100px 0;
+    width: 400px;
+}
+.about-heading h3{
     margin: 0;
     padding: 37px 0;
     font-size: 1.4rem;
     color: #330066;
     text-align: center;
 }
-.what-nkou-list{
+
+/* 右段（リスト） */
+.about-list{
     display: flex;
     margin: 10px 0;
 }
-.what-nkou-list li{
-    border-bottom: 1px solid #ccc;
-}
-.what-nkou-list li:last-child{
-    border-bottom: none;
-}
-.what-nkou-list ul{
+.about-list ul{
     list-style-type: none;
     margin: 10px 20px 10px 0;
 }
-.what-nkou-list li{
+.about-list li{
+    border-bottom: 1px solid #ccc;
     padding: 10px 0
 }
-.what-list-left li:first-child{
+.about-list li:last-child{
+    border-bottom: none;
+}
+.about a:hover{
+    color: #330066;
+}
+
+/* 装飾 */
+.about-list-left li:first-child{
     color: #330066;
 }
 
 /* ======================================== CONTACT ======================================== */
-/* ----- 共通 ----- */
+/* -----===== 全体位置・共通 =====----- */
 .contact-container{
     display: flex;
     margin-top: 100px;
@@ -433,20 +483,8 @@ a.top-list-last:hover{
     color: #fff;
     justify-content: center;
 }
-.contact-left ,.contact-right{
-    margin: 50px;
-}
-.contact-left{
-    padding: 30px 0;
-}
-.tell-font{
-    font-family: 'PT Sans Narrow';
-}
-.font-light{
-    font-weight: normal;
-}
 
-/* ----- 左コンテンツ ----- */
+/* -----===== 左コンテンツ =====----- */
 h2.contact-heading{
     display: inline;
     margin: 0 110px;
@@ -464,8 +502,9 @@ p.contact-subheading{
     font-weight: bold;
 }
 
-/* ----- 右コンテンツ ----- */
-/* コンテンツ上段 */
+/* -----===== 右コンテンツ =====----- */
+/* ----- 上段コンテンツ ----- */
+/* レイアウト */
 .contact-link-fill a{
     display: block;
     background: #fff;
@@ -482,6 +521,13 @@ p.contact-subheading{
 th.contact-link-fill{
     padding: 80px 23px 0 0;
 }
+
+/* ノーマルフォント -（無料） */
+.font-light{
+    font-weight: normal;
+}
+
+/* 付属アイコン（上段） */
 th.contact-link-fill::after{
     content: "";
     display: inline-block;
@@ -515,7 +561,7 @@ a.before-bubble::before{
     right: 8px;
 }
 
-/* コンテンツ中段 */
+/* ----- 中段コンテンツ ----- */
 .contact-supplement p{
     display: block;
     font-size: 0.9rem;
@@ -527,7 +573,8 @@ td.contact-supplement{
     padding-bottom: 5px;
 }
 
-/* コンテンツ下段 */
+/* ----- 下段コンテンツ ----- */
+/* レイアウト */
 .contact-link-transparent a{
     display: block;
     color: #fff;
@@ -544,11 +591,18 @@ td.contact-supplement{
 th.contact-link-transparent{
     padding-right: 23px;
 }
+
+/* 電話番号フォント */
+.tell-font{
+    font-family: 'PT Sans Narrow';
+}
 a.before-tell{
     font-size: 1.3rem;
     letter-spacing: 2px;
     padding: 9px 20px;
 }
+
+/* 付属アイコン（下段） */
 a.before-tell::before{
     content: "";
     display: inline-block;
@@ -570,7 +624,7 @@ a.after-blank::after{
     left: 14px;
 }
 
-/* コンテンツ 営業時間 */
+/* ----- 最下段コンテンツ（営業時間） ----- */
 td.contact-hours{
     display: block;
     width: 200px;
@@ -581,13 +635,14 @@ td.contact-hours{
 }
 
 /* ======================================== relation(関連スクール) ======================================== */
-/* 見出し */
+/* ----- 見出し ----- */
 .relation-heading h2{
     text-align: center;
     margin-top: 70px;
 }
 
-/* コンテンツ */
+/* ----- コンテンツ ----- */
+/* 位置 */
 .relation-list{
     margin-bottom: 70px;
 }
@@ -599,9 +654,17 @@ td.contact-hours{
 .relation-list figure{
     margin: 13px;
 }
-.relation-image{
-    margin: 0;
-    padding: 0;
+
+/* 画像 */
+.relation-image img{
+    width: 350px;
+    height: 130px;
+    vertical-align: bottom;
+}
+figcaption{
+    border: 1px solid #dcdcdc;
+    border-radius: 0 0 10px 10px;
+    height: 60px;
 }
 .Nchu-logo img{
     width: 130px;
@@ -611,38 +674,27 @@ td.contact-hours{
     width: 200px;
     margin: 18px 74px;
 }
-.relation-image img{
-    width: 350px;
-    height: 130px;
-    vertical-align: bottom;
-}
 .relation-list img:hover{
     opacity: 0.7;
 }
-figcaption{
-    border: 1px solid #dcdcdc;
-    border-radius: 0 0 10px 10px;
-    height: 60px;
-}
 
 /* ======================================== パンくずリスト ======================================== */
+/* ----- 上下ライン ----- */
 .breadcrumb-border-top{
     border-top: 1px solid #ccc;
 }
 .breadcrumb-border-bottom{
     border-bottom: 1px solid #ccc;
 }
+
+/* ----- 全体レイアウト ----- */
 .breadcrumb{
     max-width: 1100px;
     margin: 10px auto;
     font-size: 0.9rem;
 }
-.breadcrumb a{
-    color: #330066;
-}
-.breadcrumb a:hover{
-    opacity: 0.7;
-}
+
+/* ----- リスト ----- */
 .breadcrumb ul{
     display: flex;
     list-style-type: none;
@@ -656,9 +708,16 @@ figcaption{
     content: none;
 }
 
+/* ----- リンク ----- */
+.breadcrumb a{
+    color: #330066;
+}
+.breadcrumb a:hover{
+    opacity: 0.7;
+}
+
 /* ======================================== info ======================================== */
-/* ----- 全体レイアウト ----- */
-/* 共通 */
+/* -----===== 共通レイアウト =====----- */
 .info-container{
     max-width: 1100px;
     margin: 40px auto 20px auto;
@@ -678,7 +737,8 @@ figcaption{
     color: #330066;
 }
 
-/* info1 */
+/* -----===== info左段（見出し付リスト） =====----- */
+/* ----- 共通 ----- */
 .left-info-container h3{
     font-size: 1rem;
     font-weight: bold;
@@ -696,6 +756,9 @@ figcaption{
     height: 400px;
     width: 100%;
 }
+
+/* ----- レイアウト調整 ----- */
+/* 左３列 */
 ul.about-Nkou{
     margin-bottom: 30px;
 }
@@ -707,6 +770,8 @@ ul.support-Nkou{
     padding-right: 0;
     width: 200px;
 }
+
+/* 最右列 */
 .wrap-item{
     width: 220px;
 }
@@ -716,26 +781,43 @@ ul.wrap-item{
 h3.top-margin{
     margin-top: 30px;
 }
+
+/* ----- 装飾（補足） ----- */
 .supplement-letter{
     font-size: 0.7rem;
     color: #999;
     line-height: 1.7s;
 }
-/* info2 */
+
+/* -----===== info右段（リスト） -----===== */
+/* ----- 全体位置・共通レイアウト ----- */
 .right-info-container{
     padding-left: 25px;
     border-left: 1px solid #ccc;
     width: 220px;
 }
+.right-info-container ul{
+    padding-right: 0;
+}
+
+/* ----- 上段 ----- */
 .right-info-top{
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
 }
-.right-info-container ul{
-    padding-right: 0;
-}
+
+/* ----- 下段 ----- */
 .right-info-bottom{
     padding: 5px 0 5px 0;
+}
+
+/* ----- 下段（SNS） ----- */
+.SNS-list li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.SNS-list li:last-child{
+    margin-right: 0;
 }
 .SNS-list img{
     width: 33px;
@@ -744,22 +826,18 @@ h3.top-margin{
 .SNS-list img:hover{
     opacity: 0.7;
 }
-.SNS-list li{
-    display: inline-block;
-    margin-right: 5px;
-}
-.SNS-list li:last-child{
-    margin-right: 0;
-}
 
 /* ======================================== footer ======================================== */
-/* footer */
+/* ----- footer ----- */
+/* 全体位置 */
 .footer-container{
     max-width: 1100px;
     margin: 0 auto;
     background: #fffafa;
     color: #808080;
 }
+
+/* コンテンツ */
 .footer-container h4{
     font-size: 0.8rem;
     font-weight: lighter;
@@ -774,7 +852,7 @@ h3.top-margin{
     padding: 0 20px 20px 20px;
 }
 
-/* コピーライト */
+/* ----- コピーライト ----- */
 p.copyright{
     text-align: center;
     margin: 20px 0;
