@@ -338,7 +338,7 @@ a.top-list-last:hover{
     width: 550px;
 }
 .feature-item-schedule ,.feature-item-experience-image ,.feature-item-ICT{
-    margin-right: 30px;
+    margin-right: 10px;
 }
 .feature-item-schedule-image ,.feature-item-experience ,.feature-item-ICT-image{
     margin-left: auto;
@@ -349,6 +349,15 @@ a.top-list-last:hover{
     width: 500px;
     height: 380px;
     border-radius: 10px;
+    padding-left: 30px;
+}
+.feature-item-schedule-image img{
+    width: 500px;
+    height: 410px;
+    border-radius: 10px;
+}
+.feature-item-experience-image img{
+    padding-left: 0;
 }
 
 /* 文字 */
