@@ -23,7 +23,7 @@ a{
 .top-header-container{
     margin: 0;
     padding: 0;
-    background-color: #ccffff;
+    background-color: #fafbfd;
 }
 .top-header{
     max-width: 1100px;
@@ -34,7 +34,7 @@ a{
 /* ----- テキスト ----- */
 .top-header p{
     font-size: 0.8rem;
-    color: #a9a9a9;
+    color: #8d959c;
     padding: 10px 0;
 }
 
@@ -61,7 +61,7 @@ a{
     margin: 0 15px;
 }
 .top-header-list a:hover{
-    color: #330066;
+    color: #1f2b6b;
 }
 
 /* last-child（生徒用ログイン） */
@@ -72,7 +72,7 @@ a{
     border-right: none;
 }
 .top-list-last{
-    color: #330066;
+    color: #1f2b6b;
     font-weight: bold;
 }
 a.top-list-last{
@@ -106,7 +106,7 @@ a.top-list-last:hover{
 /* 見出し */
 .header-tel h4{
     font-size: 0.7rem;
-    color: #330066;
+    color: #1f2b6b;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -118,7 +118,7 @@ a.top-list-last:hover{
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
     font-weight: bold;
-    color: #330066;
+    color: #1f2b6b;
     background: url(../images/svg/call.svg) no-repeat left;
     background-size: 24px 24px;
     padding-left: 28px;
@@ -130,7 +130,7 @@ a.top-list-last:hover{
 /* 補足（営業時間） */
 .header-tel p{
     font-size: 0.75rem;
-    color: #a9a9a9;
+    color: #8d959c;
     text-align: center;
     margin: 0;
 }
@@ -156,7 +156,7 @@ a.top-list-last:hover{
     width: 125px;
     padding: 10px 8px;
     border-radius: 5px;
-    background: #330066;
+    background: #1f2b6b;
     color: #fff;
     text-align: center;
     font-weight: bold;
@@ -207,7 +207,7 @@ a.top-list-last:hover{
     border-right: none;
 }
 .navbar a:hover{
-    color: #330066;
+    color: #1f2b6b;
 }
 
 /* ======================================== key-visual ======================================== */
@@ -254,18 +254,18 @@ a.top-list-last:hover{
 .heading{
     display: block;
     position: relative;
-    background: #66ffff;
+    background: #f1f3f7;
     text-align: center;
     margin: 0;
     padding: 60px 0;
     font-size: 1.5rem;
-    color: #330066;
+    color: #1f2b6b;
     letter-spacing: 4px;
 }
 .heading ::after{
     position: absolute;
     content: '';
-    border-right: 1px solid #330066;
+    border-right: 1px solid #1f2b6b;
     height: 80px;
     left: 50%;
     top: 130px;
@@ -296,7 +296,7 @@ a.top-list-last:hover{
 .education-item li{
     list-style-type: none;
     text-align: center;
-    background: #66ffff;
+    background: #f1f3f7;
     padding: 13px 35px;
     margin-bottom: 25px;
     margin-left: 50px;
@@ -313,7 +313,7 @@ a.top-list-last:hover{
 .bold-font{
     font-size: 1.2rem;
     font-weight: bold;
-    color: #330066;
+    color: #1f2b6b;
 }
 
 /* -----===== ネットの高校の特長 =====----- */
@@ -365,7 +365,7 @@ a.top-list-last:hover{
     font-family: 'Gelasio', serif;
     font-size: 3.8rem;
     letter-spacing: 7px;
-    color: #330066;
+    color: #1f2b6b;
 }
 .feature-heading h3{
     font-size: 1.4rem;
@@ -383,7 +383,7 @@ a.top-list-last:hover{
 .feature-link a{
     font-weight: bold;
     font-size: 0.9rem;
-    color: #330066;
+    color: #1f2b6b;
     padding-right: 20px;
     background: url(../images/svg/link_arrow.svg) no-repeat right top;
     margin-right: 17px;
@@ -406,7 +406,7 @@ a.top-list-last:hover{
     width: 950px;
     margin: 0 auto;
     margin-top: 40px;
-    background: #66ffff;
+    background: #f1f3f7;
 }
 
 /* 文字 */
@@ -433,7 +433,7 @@ a.top-list-last:hover{
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: #330066;
+    background: #1f2b6b;
     top: 13px;
     left: 0;
 }
@@ -445,7 +445,7 @@ a.top-list-last:hover{
     margin-top: 80px;
     padding: 0;
     width: 1100px;
-    background: #66ffff;
+    background: #f1f3f7;
 }
 
 /* ----- コンテンツ ----- */
@@ -464,7 +464,7 @@ a.top-list-last:hover{
     margin: 0;
     padding: 37px 0;
     font-size: 1.4rem;
-    color: #330066;
+    color: #1f2b6b;
     text-align: center;
 }
 
@@ -478,19 +478,19 @@ a.top-list-last:hover{
     margin: 10px 20px 10px 0;
 }
 .about-list li{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #e1e1eb;
     padding: 10px 0
 }
 .about-list li:last-child{
     border-bottom: none;
 }
 .about a:hover{
-    color: #330066;
+    color: #1f2b6b;
 }
 
 /* 装飾 */
 .about-list-left li:first-child{
-    color: #330066;
+    color: #1f2b6b;
 }
 
 /* ======================================== CONTACT ======================================== */
@@ -498,7 +498,7 @@ a.top-list-last:hover{
 .contact-container{
     display: flex;
     margin-top: 100px;
-    background: #330066;
+    background: #1f2b6b;
     color: #fff;
     justify-content: center;
 }
@@ -527,7 +527,7 @@ p.contact-subheading{
 .contact-link-fill a{
     display: block;
     background: #fff;
-    color: #330066;
+    color: #1f2b6b;
     border-radius: 5px;
     width: 200px;
     padding: 12px 20px;
@@ -535,7 +535,7 @@ p.contact-subheading{
     font-weight: bold;
 }
 .contact-link-fill a:hover{
-    background: #f5f5f5;
+    background: #eceef8;
 }
 th.contact-link-fill{
     padding: 80px 23px 0 0;
@@ -649,7 +649,7 @@ td.contact-hours{
     width: 200px;
     padding: 5px 20px 40px 20px;
     font-size: 0.9rem;
-    color: #00ccff;
+    color: #b7bcdd;
     text-align: center;
 }
 
@@ -721,7 +721,7 @@ figcaption{
 .breadcrumb li::after{
     content: ">";
     margin: 0 10px;
-    color: #330066;
+    color: #1f2b6b;
 }
 .breadcrumb li:last-child::after{
     content: none;
@@ -729,7 +729,7 @@ figcaption{
 
 /* ----- リンク ----- */
 .breadcrumb a{
-    color: #330066;
+    color: #1f2b6b;
 }
 .breadcrumb a:hover{
     opacity: 0.7;
@@ -753,7 +753,7 @@ figcaption{
     letter-spacing: 1.5px;
 }
 .info-container a:hover{
-    color: #330066;
+    color: #1f2b6b;
 }
 
 /* -----===== info左段（見出し付リスト） =====----- */
@@ -761,7 +761,7 @@ figcaption{
 .left-info-container h3{
     font-size: 1rem;
     font-weight: bold;
-    color: #330066;
+    color: #1f2b6b;
     margin: 0;
     padding: 0;
 }
@@ -812,7 +812,7 @@ h3.top-margin{
 /* ----- 全体位置・共通レイアウト ----- */
 .right-info-container{
     padding-left: 25px;
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #e1e1eb;
     width: 220px;
 }
 .right-info-container ul{
@@ -822,7 +822,7 @@ h3.top-margin{
 /* ----- 上段 ----- */
 .right-info-top{
     padding-bottom: 5px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #e1e1eb;
 }
 
 /* ----- 下段 ----- */
@@ -852,8 +852,8 @@ h3.top-margin{
 .footer-container{
     max-width: 1100px;
     margin: 0 auto;
-    background: #fffafa;
-    color: #808080;
+    background: #fafbfd;
+    color: #8d959c;
 }
 
 /* コンテンツ */
@@ -875,5 +875,5 @@ h3.top-margin{
 p.copyright{
     text-align: center;
     margin: 20px 0;
-    color: #a9a9a9;
+    color: #8d959c;
 }
