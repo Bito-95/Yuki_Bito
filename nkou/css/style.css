@@ -1,0 +1,879 @@
+@charset "utf-8";
+
+/* ======================================== 共通 ======================================== */
+html, body{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+body, div, p, h1, h2, ul{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    color: #111;
+    text-decoration: none;
+}
+
+/* ======================================== header ======================================== */
+/* -----===== 最上段ヘッダー =====----- */
+.top-header-container{
+    margin: 0;
+    padding: 0;
+    background-color: #fafbfd;
+}
+.top-header{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* ----- テキスト ----- */
+.top-header p{
+    font-size: 0.8rem;
+    color: #8d959c;
+    padding: 10px 0;
+}
+
+/* ----- リスト ----- */
+/* 全体レイアウト */
+.top-header-list{
+    margin-left: auto;
+    padding: 0;
+}
+
+/* リスト */
+.top-header-list ul{
+    display: flex;
+    list-style-type: none;
+    margin: 10px 0;
+}
+.top-header-list li{
+    border-right: 1px solid #dcdcdc;
+    line-height: 1.1;
+}
+.top-header-list a{
+    font-size: 0.8rem;
+    padding: 10px 0;
+    margin: 0 15px;
+}
+.top-header-list a:hover{
+    color: #1f2b6b;
+}
+
+/* last-child（生徒用ログイン） */
+.top-header-list li:last-child{
+    padding-left: 13px;
+    background: url(../images/svg/login.svg) no-repeat left;
+    background-position: 5px 0;
+    border-right: none;
+}
+.top-list-last{
+    color: #1f2b6b;
+    font-weight: bold;
+}
+a.top-list-last{
+    margin-right: 0;
+}
+a.top-list-last:hover{
+    opacity: 0.7;
+}
+
+/* -----===== メインヘッダー =====----- */
+.main-header{
+    max-width: 1100px;
+    display: flex;
+    margin: 20px auto;
+}
+
+/* ----- ロゴ ----- */
+.header-logo img{
+    width: 350px;
+}
+.header-logo img:hover{
+    opacity: 0.7;
+}
+
+/* ----- 電話番号 ----- */
+/* 位置 */
+.header-tel{
+    margin-left: auto
+}
+
+/* 見出し */
+.header-tel h4{
+    font-size: 0.7rem;
+    color: #1f2b6b;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 電話番号 */
+.header-tel a{
+    font-family: 'PT Sans Narrow';
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    color: #1f2b6b;
+    background: url(../images/svg/call.svg) no-repeat left;
+    background-size: 24px 24px;
+    padding-left: 28px;
+}
+.header-tel a:hover{
+    opacity: 0.7;
+}
+
+/* 補足（営業時間） */
+.header-tel p{
+    font-size: 0.75rem;
+    color: #8d959c;
+    text-align: center;
+    margin: 0;
+}
+
+/* ----- リンク ----- */
+/* 位置 */
+.header-link{
+    margin-left: 10px;
+}
+
+/* リンク */
+.header-link ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.header-link li{
+    margin: 5px;
+}
+.header-link a{
+    display: block;
+    width: 125px;
+    padding: 10px 8px;
+    border-radius: 5px;
+    background: #1f2b6b;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.header-link a:hover{
+    opacity: 0.7;
+}
+.normal-font{
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+/* ======================================== nav ======================================== */
+/* 全体位置 */
+.navbar{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin: 15px 0;
+    justify-content: space-around;
+}
+.navbar li{
+    flex-basis: 20%;
+}
+
+/* レイアウト */
+.navbar p{
+    display: block;
+    margin: 0;
+    padding: 10px 30px;
+}
+.nav-two-lines p{
+    padding: 0 30px;
+}
+.navbar a{
+    display: block;
+    font-size: 0.9rem;
+    border-right: 1px solid #dcdcdc;
+    height: 40px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+.nav-last-child a{
+    border-right: none;
+}
+.navbar a:hover{
+    color: #1f2b6b;
+}
+
+/* ======================================== key-visual ======================================== */
+/* ----- 画像 ----- */
+.key-visual{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(17,17,17,1), transparent), url(../images/nkou_key.jpg) no-repeat;
+    background-position: right 0px;
+    height: 650px;
+}
+
+/* ----- 文字 ----- */
+/* 位置 */
+.key-catch{
+    position: absolute;
+    color: #fff;
+    top: 400px;
+    left: 80px;
+}
+
+/* 装飾 */
+.key-underline p{
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    font-family: PT Serif;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #fff;
+}
+.key-catch h2{
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+}
+.key-catch h3{
+    line-height: 2.2;
+    letter-spacing: 4px;
+}
+
+/* ======================================== main ======================================== */
+/* -----===== 共通見出し（教育方針・特長） =====----- */
+.heading{
+    display: block;
+    position: relative;
+    background: #f1f3f7;
+    text-align: center;
+    margin: 0;
+    padding: 60px 0;
+    font-size: 1.5rem;
+    color: #1f2b6b;
+    letter-spacing: 4px;
+}
+.heading ::after{
+    position: absolute;
+    content: '';
+    border-right: 1px solid #1f2b6b;
+    height: 80px;
+    left: 50%;
+    top: 130px;
+}
+
+/* -----===== ネットの高校の教育方針 =====-----  */
+/* ----- 全体レイアウト ----- */
+.education-container{
+    max-width: 1100px;
+    margin: 70px auto 0 auto;
+}
+
+/* ----- 見出し文 ----- */
+.education-container p{
+    letter-spacing: 1.2px;
+    line-height: 2;
+}
+
+/* ----- コンテンツ ----- */
+/* 全体位置 */
+.education-contents{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+/* レイアウト */
+.education-item li{
+    list-style-type: none;
+    text-align: center;
+    background: #f1f3f7;
+    padding: 13px 35px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+.education-item p{
+    line-height: 1.7;
+}
+
+/* 装飾 */
+.education-image img{
+    height: 300px;
+    width: 350px;
+}
+.bold-font{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1f2b6b;
+}
+
+/* -----===== ネットの高校の特長 =====----- */
+/* ----- 全体位置 ----- */
+.features-container{
+    max-width: 1100px;
+    margin: 100px auto 0 auto;
+}
+
+/* ----- 共通レイアウト ----- */
+/* 位置 */
+.features-item{
+    display: flex;
+    margin-top: 100px;
+    align-items: flex-end;
+}
+
+/* 各コンテンツ（サイズ・位置） */
+.feature-item-schedule ,.feature-item-schedule-image
+,.feature-item-experience ,.feature-item-experience-image
+,.feature-item-ICT ,.feature-item-ICT-image{
+    width: 550px;
+}
+.feature-item-schedule ,.feature-item-experience-image ,.feature-item-ICT{
+    margin-right: 10px;
+}
+.feature-item-schedule-image ,.feature-item-experience ,.feature-item-ICT-image{
+    margin-left: auto;
+}
+
+/* 画像 */
+.feature-image img{
+    width: 500px;
+    height: 380px;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+.feature-item-schedule-image img{
+    width: 500px;
+    height: 410px;
+    border-radius: 10px;
+}
+.feature-item-experience-image img{
+    padding-left: 0;
+}
+
+/* 文字 */
+.feature-number p{
+    font-family: 'Gelasio', serif;
+    font-size: 3.8rem;
+    letter-spacing: 7px;
+    color: #1f2b6b;
+}
+.feature-heading h3{
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 1.7;
+    margin: 0;
+}
+.feature-text p{
+    letter-spacing: 1.5px;
+    line-height: 2;
+    margin: 20px 0;
+}
+
+/* リンク */
+.feature-link a{
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #1f2b6b;
+    padding-right: 20px;
+    background: url(../images/svg/link_arrow.svg) no-repeat right top;
+    margin-right: 17px;
+}
+.feature-link a:hover{
+    opacity: 0.7;
+}
+
+/* ----- 02（経験）レイアウト ----- */
+.feature-item-experience{
+    order: 2;
+}
+.feature-item-experience-image{
+    order: 1;
+}
+
+/* ----- 03-2（ICTツールリスト） ----- */
+/* 位置・サイズ */
+.net-real-list{
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #f1f3f7;
+}
+
+/* 文字 */
+.net-real-list h4{
+    padding: 25px 0 0 30px;
+}
+.net-real-list p{
+    padding: 10px 0 25px 30px;
+}
+
+/* リスト */
+.net-real-list ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 30px;
+}
+.net-real-list li{
+    padding: 0 20px 0 15px;
+    position: relative;
+}
+.net-real-list li::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #1f2b6b;
+    top: 13px;
+    left: 0;
+}
+
+/* -----===== ネットの高校とは =====----- */
+/* ----- 全体位置 ----- */
+.about{
+    display: flex;
+    margin-top: 80px;
+    padding: 0;
+    width: 1100px;
+    background: #f1f3f7;
+}
+
+/* ----- コンテンツ ----- */
+/* コンテンツ内 領域 */
+.about-list-left ,.about-list-right{
+    margin: 0;
+    width: 350px;
+}
+
+/* 左段（見出し） */
+.about-heading{
+    margin: 100px 0;
+    width: 400px;
+}
+.about-heading h3{
+    margin: 0;
+    padding: 37px 0;
+    font-size: 1.4rem;
+    color: #1f2b6b;
+    text-align: center;
+}
+
+/* 右段（リスト） */
+.about-list{
+    display: flex;
+    margin: 10px 0;
+}
+.about-list ul{
+    list-style-type: none;
+    margin: 10px 20px 10px 0;
+}
+.about-list li{
+    border-bottom: 1px solid #e1e1eb;
+    padding: 10px 0
+}
+.about-list li:last-child{
+    border-bottom: none;
+}
+.about a:hover{
+    color: #1f2b6b;
+}
+
+/* 装飾 */
+.about-list-left li:first-child{
+    color: #1f2b6b;
+}
+
+/* ======================================== CONTACT ======================================== */
+/* -----===== 全体位置・共通 =====----- */
+.contact-container{
+    display: flex;
+    margin-top: 100px;
+    background: #1f2b6b;
+    color: #fff;
+    justify-content: center;
+}
+
+/* -----===== 左コンテンツ =====----- */
+h2.contact-heading{
+    display: inline;
+    margin: 0 110px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: PT Serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #fff;
+}
+p.contact-subheading{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* -----===== 右コンテンツ =====----- */
+/* ----- 上段コンテンツ ----- */
+/* レイアウト */
+.contact-link-fill a{
+    display: block;
+    background: #fff;
+    color: #1f2b6b;
+    border-radius: 5px;
+    width: 200px;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.contact-link-fill a:hover{
+    background: #eceef8;
+}
+th.contact-link-fill{
+    padding: 80px 23px 0 0;
+}
+
+/* ノーマルフォント -（無料） */
+.font-light{
+    font-weight: normal;
+}
+
+/* 付属アイコン（上段） */
+th.contact-link-fill::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/svg/icon_blank.svg);
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 95px;
+    top: -36px;
+}
+a.before-book::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/svg/book.svg);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    position: relative;
+    top: 6px;
+    right: 5px;
+}
+a.before-bubble::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/svg/bubble.svg);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    position: relative;
+    top: 6px;
+    right: 8px;
+}
+
+/* ----- 中段コンテンツ ----- */
+.contact-supplement p{
+    display: block;
+    font-size: 0.9rem;
+    width: 200px;
+    padding: 0px 20px;
+    text-align: center;
+}
+td.contact-supplement{
+    padding-bottom: 5px;
+}
+
+/* ----- 下段コンテンツ ----- */
+/* レイアウト */
+.contact-link-transparent a{
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 200px;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.contact-link-transparent a:hover{
+    background-color: #575fa5;
+}
+th.contact-link-transparent{
+    padding-right: 23px;
+}
+
+/* 電話番号フォント */
+.tell-font{
+    font-family: 'PT Sans Narrow';
+}
+a.before-tell{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 9px 20px;
+}
+
+/* 付属アイコン（下段） */
+a.before-tell::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/svg/icon_call_white.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain; 
+    position: relative;
+    top: 3px;
+    right: 10px;   
+}
+a.after-blank::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/svg/icon_blank_white.svg);
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 14px;
+}
+
+/* ----- 最下段コンテンツ（営業時間） ----- */
+td.contact-hours{
+    display: block;
+    width: 200px;
+    padding: 5px 20px 40px 20px;
+    font-size: 0.9rem;
+    color: #b7bcdd;
+    text-align: center;
+}
+
+/* ======================================== relation(関連スクール) ======================================== */
+/* ----- 見出し ----- */
+.relation-heading h2{
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* ----- コンテンツ ----- */
+/* 位置 */
+.relation-list{
+    margin-bottom: 70px;
+}
+.relation-list ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.relation-list figure{
+    margin: 13px;
+}
+
+/* 画像 */
+.relation-image img{
+    width: 350px;
+    height: 130px;
+    vertical-align: bottom;
+}
+figcaption{
+    border: 1px solid #dcdcdc;
+    border-radius: 0 0 10px 10px;
+    height: 60px;
+}
+.Nchu-logo img{
+    width: 130px;
+    margin: 14px 109px;
+}
+.Nlabo-logo img{
+    width: 200px;
+    margin: 18px 74px;
+}
+.relation-list img:hover{
+    opacity: 0.7;
+}
+
+/* ======================================== パンくずリスト ======================================== */
+/* ----- 上下ライン ----- */
+.breadcrumb-border-top{
+    border-top: 1px solid #ccc;
+}
+.breadcrumb-border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+
+/* ----- 全体レイアウト ----- */
+.breadcrumb{
+    max-width: 1100px;
+    margin: 10px auto;
+    font-size: 0.9rem;
+}
+
+/* ----- リスト ----- */
+.breadcrumb ul{
+    display: flex;
+    list-style-type: none;
+}
+.breadcrumb li::after{
+    content: ">";
+    margin: 0 10px;
+    color: #1f2b6b;
+}
+.breadcrumb li:last-child::after{
+    content: none;
+}
+
+/* ----- リンク ----- */
+.breadcrumb a{
+    color: #1f2b6b;
+}
+.breadcrumb a:hover{
+    opacity: 0.7;
+}
+
+/* ======================================== info ======================================== */
+/* -----===== 共通レイアウト =====----- */
+.info-container{
+    max-width: 1100px;
+    margin: 40px auto 20px auto;
+    font-weight: lighter;
+    display: flex;
+}
+.info-container ul{
+    list-style-type: none;
+    padding-right: 30px;
+}
+.info-container li{
+    font-size: 0.8rem;
+    margin: 10px 0;
+    letter-spacing: 1.5px;
+}
+.info-container a:hover{
+    color: #1f2b6b;
+}
+
+/* -----===== info左段（見出し付リスト） =====----- */
+/* ----- 共通 ----- */
+.left-info-container h3{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1f2b6b;
+    margin: 0;
+    padding: 0;
+}
+.left-info-container h3:hover{
+    opacity: 0.7;
+}
+.left-info-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 100%;
+}
+
+/* ----- レイアウト調整 ----- */
+/* 左３列 */
+ul.about-Nkou{
+    margin-bottom: 30px;
+}
+ul.course-Nkou{
+    margin-bottom: 70px; 
+}
+ul.support-Nkou{
+    margin-bottom: 60px;
+    padding-right: 0;
+    width: 200px;
+}
+
+/* 最右列 */
+.wrap-item{
+    width: 220px;
+}
+ul.wrap-item{
+    padding-right: 0;
+}
+h3.top-margin{
+    margin-top: 30px;
+}
+
+/* ----- 装飾（補足） ----- */
+.supplement-letter{
+    font-size: 0.7rem;
+    color: #999;
+    line-height: 1.7s;
+}
+
+/* -----===== info右段（リスト） -----===== */
+/* ----- 全体位置・共通レイアウト ----- */
+.right-info-container{
+    padding-left: 25px;
+    border-left: 1px solid #e1e1eb;
+    width: 220px;
+}
+.right-info-container ul{
+    padding-right: 0;
+}
+
+/* ----- 上段 ----- */
+.right-info-top{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e1e1eb;
+}
+
+/* ----- 下段 ----- */
+.right-info-bottom{
+    padding: 5px 0 5px 0;
+}
+
+/* ----- 下段（SNS） ----- */
+.SNS-list li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.SNS-list li:last-child{
+    margin-right: 0;
+}
+.SNS-list img{
+    width: 33px;
+    height: 33px;
+}
+.SNS-list img:hover{
+    opacity: 0.7;
+}
+
+/* ======================================== footer ======================================== */
+/* ----- footer ----- */
+/* 全体位置 */
+.footer-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fafbfd;
+    color: #8d959c;
+}
+
+/* コンテンツ */
+.footer-container h4{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin: 0;
+    padding: 20px 0 0 20px;
+}
+.footer-container p{
+    font-size: 0.5rem;
+    font-weight: lighter;
+    line-height: 2;
+    margin: 0;
+    padding: 0 20px 20px 20px;
+}
+
+/* ----- コピーライト ----- */
+p.copyright{
+    text-align: center;
+    margin: 20px 0;
+    color: #8d959c;
+}
